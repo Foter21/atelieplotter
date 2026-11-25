@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materiais | Ateliê do Plotter</title>
+  <meta name="description" content="Catálogo de materiais para envelopamento e PPF: SpeedWrapping, Oracal, 3M, Avery Dennison, KPMF, Hexis, Imprimax, XPEL, SunTek, STEK e outras marcas, com cores, texturas, ficha técnica e durabilidade.">
+
+  <!-- Ícones e cor do navegador (logo da marca) -->
+  <link rel="icon" href="../favicon.ico" sizes="48x48">
+  <link rel="icon" href="../assets/img/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/logo/apple-touch-icon.png">
+  <meta name="theme-color" content="#0d0f0e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ====================== MENU DE NAVEGAÇÃO ====================== -->
+  <header class="topo">
+    <a href="../index.html" class="logo" aria-label="Ateliê do Plotter, voltar ao início">
+      <img src="../assets/img/logo/logo-branca.svg" alt="Ateliê do Plotter" width="1430" height="280">
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="menu" class="menu">
+      <a href="../index.html">Início</a>
+      <a href="#envelopamento">Envelopamento</a>
+      <a href="#ppf">PPF</a>
+      <a href="../index.html#agendar">Agendar</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ====================== CABEÇALHO DA PÁGINA ====================== -->
+    <section class="hero hero-pagina">
+      <div class="hero-conteudo">
+        <p class="hero-sub">Catálogo de materiais</p>
+        <h1>Conheça os materiais antes de escolher.</h1>
+        <div class="acoes">
+          <a class="btn" href="#envelopamento">Tipos de envelopamento</a>
+          <a class="btn btn-ghost" href="#ppf">PPF</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================== ENVELOPAMENTO ====================== -->
+    <section id="envelopamento" class="bloco claro">
+      <div class="cab">
+        <h2>Tipos de envelopamento</h2>
+        <p>Linhas SpeedWrapping, Oracal, 3M, Avery Dennison, KPMF, Hexis e Imprimax, organizadas por acabamento, com mais de <strong><span id="totalCores">0</span> cores</strong> e texturas. Clique nas bolinhas para ver cada cor na amostra. A ficha técnica de cada material está no próprio cartão.</p>
+      </div>
+
+      <!-- Abas e cartões gerados por assets/js/materiais.js a partir de assets/js/data/dados-materiais.js -->
+      <div class="filtros" id="filtroTipo"></div>
+      <div class="materiais" id="gradeEnvelopamento"></div>
+
+      <p class="aviso">
+        As amostras são ilustrativas: a cor na tela não substitui a cartela física e as cores reais variam entre lotes.
+        A durabilidade é a expectativa informada pelo fabricante e depende da aplicação,
+        do clima e dos cuidados. Garantias de 3M e Avery Dennison seguem regras por país, então as condições no Brasil
+        são confirmadas no orçamento. Quando o fabricante não traz o número, o cartão pede confirmação.
+        3M, Avery Dennison, KPMF e Hexis são marcas de mercado disponíveis para o projeto, sem relação de parceria com o ateliê.
+      </p>
+    </section>
+
+
+    <!-- ====================== PPF (separado do envelopamento) ====================== -->
+    <section id="ppf" class="bloco escuro">
+      <div class="cab">
+        <h2>PPF e proteção de pintura</h2>
+        <p>Diferente do envelopamento, a película protetiva não muda a cor: ela protege a pintura original contra riscos, pedras e desgaste. Aqui estão as marcas mais respeitadas do mercado, com a ficha completa de cada uma.</p>
+      </div>
+
+      <h3 class="sub">Comparativo rápido</h3>
+      <div class="tabela-rolagem" id="tabelaPPF"></div>
+
+      <h3 class="sub">Ficha de cada película</h3>
+      <div class="materiais" id="gradePPF"></div>
+
+      <p class="aviso">
+        Os valores de espessura e de garantia vêm de fichas técnicas e comparativos de instaladores, e podem mudar por versão,
+        país e aplicador. Espessura, tipo de material e garantia do PPF são confirmados com o ateliê no orçamento.
+        As marcas internacionais de PPF são referências de mercado e não indicam parceria com o ateliê.
+      </p>
+    </section>
+
+
+    <!-- ====================== CHAMADA FINAL ====================== -->
+    <section class="bloco verde">
+      <div class="cab">
+        <h2>Escolheu um material?</h2>
+        <p>Fale com o ateliê para ver amostras e receber um orçamento.</p>
+      </div>
+      <a class="btn btn-ghost" data-wa="Olá! Vi o catálogo de materiais no site e gostaria de um orçamento.">Falar no WhatsApp</a>
+    </section>
+
+  </main>
+
+
+  <footer class="rodape">
+    <img class="logo-rodape" src="../assets/img/logo/logo-branca.svg" alt="Ateliê do Plotter" width="1430" height="280" loading="lazy">
+    <span>© <span id="ano"></span> Ateliê do Plotter. Betim - MG.</span>
+    <a href="../index.html">Voltar ao início</a>
+  </footer>
+
+  <!-- Botão flutuante do Instagram (fica acima do WhatsApp) -->
+  <a class="ig-flutuante" href="https://www.instagram.com/ateliedoplotter/" target="_blank" rel="noopener" aria-label="Abrir o Instagram do Ateliê do Plotter">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+  </a>
+
+  <a class="wa-flutuante" data-origem="botao-flutuante" data-wa="Olá! Vim pelo site e gostaria de um orçamento." aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+      <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.200-4.600-4-4.800-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.300 0 .5l-.4.500c-.2.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.4-.2.7-.1l1.900.9c.3.100.5.200.5.300.1.300.1.800-.1 1.400z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts (a ordem importa: main -> dados -> materiais) -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/data/dados-materiais.js"></script>
+  <script src="../assets/js/materiais.js"></script>
+</body>
+</html>
